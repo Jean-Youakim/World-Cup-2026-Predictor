@@ -173,10 +173,5 @@ Top 10 teams by Elo (as of 2026-06-08):
 
 This project is open source and available for educational use.
 
-## ✍️ Author
-
-**Jean-Youakim** — Machine Learning & Sports Analytics
-
----
 
 **Last Updated**: June 2026 | **Data Cutoff**: June 8, 2026
