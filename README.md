@@ -2,12 +2,19 @@
 
 A machine learning-powered predictor that simulates the 2026 FIFA World Cup 50,000+ times to estimate each team's probability of winning, reaching specific rounds, and other tournament outcomes.
 
+## ✅ Outcome
+
+The forecast was published here on 11 June 2026, before the tournament's opening match.
+
+- **Champion pick:** Spain, who went on to win the tournament
+- **Top four:** the model's four most likely semifinalists matched the four teams that actually reached the semifinals
+
 ## 📋 Overview
 
 This project uses:
 - **Historical match data** (2010-2026) with tournament importance weighting
 - **FIFA Elo rating system** to track team strength over time
-- **Random Forest classifier** trained on 1,900+ international matches
+- **Random Forest classifier** trained on 1,932 matches between FIFA-ranked teams (Elo ratings are built from all 15,790 matches)
 - **Monte Carlo simulation** (50,000+ runs) to estimate tournament probabilities
 - **Realistic score distributions** based on historical goal patterns
 
