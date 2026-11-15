@@ -1,6 +1,6 @@
 # 🏆 FIFA World Cup 2026 — Monte Carlo Tournament Simulator
 
-A machine learning-powered predictor that simulates the 2026 FIFA World Cup thousands of times to estimate each team's probability of winning, reaching specific rounds, and other tournament outcomes.
+A machine learning-powered predictor that simulates the 2026 FIFA World Cup 50,000+ times to estimate each team's probability of winning, reaching specific rounds, and other tournament outcomes.
 
 ## 📋 Overview
 
@@ -8,7 +8,7 @@ This project uses:
 - **Historical match data** (2010-2026) with tournament importance weighting
 - **FIFA Elo rating system** to track team strength over time
 - **Random Forest classifier** trained on 1,900+ international matches
-- **Monte Carlo simulation** (10,000+ runs) to estimate tournament probabilities
+- **Monte Carlo simulation** (50,000+ runs) to estimate tournament probabilities
 - **Realistic score distributions** based on historical goal patterns
 
 The simulator accounts for:
@@ -72,8 +72,8 @@ pip install numpy pandas scikit-learn
 
 ### Running the Simulator
 ```python
-# Run 10,000 tournament simulations
-num_simulations = 10000
+# Run 50,000 tournament simulations
+num_simulations = 50000
 rng = np.random.default_rng(RANDOM_STATE)
 
 results_by_team = {t: {'champion': 0, 'finalist': 0, 'semifinal': 0, 'round_of_16': 0, 'qualified': 0} for t in RANKED_TEAMS}
@@ -124,7 +124,7 @@ The output shows each team's probabilities:
    ├─ Cache in 48×48 matrices for fast lookup
    └─ Account for host nation home advantage
 
-5. Tournament Simulation (10,000+ runs)
+5. Tournament Simulation (50,000+ runs)
    ├─ Simulate group stage with realistic scores
    ├─ Rank teams by points, GD, GF, FIFA rank
    ├─ Select best 8 third-place teams
@@ -140,7 +140,7 @@ The output shows each team's probabilities:
 2. **Tournament weighting** — World Cup matches influence the model more than friendlies
 3. **Feature engineering** — Differences (not absolutes) matter most for prediction
 4. **Realistic simulations** — Goal distributions ensure credible scorelines for tie-breaking
-5. **Large sample size** — 10,000 simulations reduce variance and show true probabilities
+5. **Large sample size** — 50,000 simulations reduce variance and show true probabilities
 
 ### Limitations
 
