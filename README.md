@@ -57,7 +57,7 @@ Realistic goal scoring patterns:
 Each Monte Carlo run:
 1. **Group Stage** — 6 matches per group, teams ranked by points/GD/GF/FIFA rank
 2. **Best 8 Third Places** — Top 8 third-place finishers qualify
-3. **Round of 32** — 16 qualified teams (2 per group) + best 8 third-place teams
+3. **Round of 32** — 24 qualified teams (2 per group) + best 8 third-place teams
 4. **Knockout Rounds** — Quarterfinals → Semifinals → Final
 5. **Winner Determination** — Draws impossible in knockouts (50/50 probability split)
 
